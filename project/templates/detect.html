@@ -1,0 +1,18 @@
+{% extends 'home.html' %}
+
+{% block content %}
+
+<style>
+    body{
+        background-color: black;
+    }
+</style>
+
+<center>
+<img id="liveFeed" src="{% url 'detection' %}" alt="Live Feed" ><br>
+
+<a class="btn btn-primary mt-5" type="submit" href="{%url 'home'%}">Stop Camera!</a>
+</center>
+
+
+{% endblock content %}
